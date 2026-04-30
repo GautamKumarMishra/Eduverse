@@ -56,8 +56,7 @@ function Navbar() {
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
                   <DropdownMenuItem>
-                    {/* <Link to="my-learning">My learning</Link> */}
-                    My learning
+                    <Link to="my-learning">My learning</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
                     {" "}

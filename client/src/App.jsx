@@ -3,6 +3,7 @@ import HeroSection from "./pages/student/HeroSection";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./Layout/MainLayout";
 import Courses from "./pages/student/Courses";
+import MyLearning from "./pages/student/myLearning";
 // Eduverse – A play on “education” and “universe,” suggesting a vast learning ecosystem.
 
 const appRouter = createBrowserRouter([
@@ -16,6 +17,8 @@ const appRouter = createBrowserRouter([
           <>
             <HeroSection />
             <Courses />
+            {/* <MyLearning/> */}
+
           </>
         ),
       },
@@ -24,6 +27,14 @@ const appRouter = createBrowserRouter([
         element: (
           <>
             <Login />
+          </>
+        ),
+      },
+      {
+        path: "/my-learning",
+        element: (
+          <>
+            <MyLearning/>
           </>
         ),
       },
